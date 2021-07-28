@@ -13,14 +13,15 @@ html {
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 1em;
-  min-height: 1200px;
+  background: #DBD2DF;
 }
 
 .container {
+  margin: 0 auto;
   width: 100%;
   min-height: 100vh;
   position: relative;
-  background: #DBD2DF;
+  
 }
 
 .header {
@@ -40,8 +41,6 @@ body {
   color: aliceblue;
   font-size: 1.1rem;
 }
-
-
 
 .main {
   width: 1024px;
