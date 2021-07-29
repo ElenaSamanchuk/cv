@@ -57,6 +57,7 @@ h1, h2 {
 
 .header {
   position: fixed;
+  margin-top: -60px;
   width: 1024px;
   min-height: 55px;
   box-shadow: 0.14px 1px 3px 1px rgba(0,1,1,.118);
@@ -281,7 +282,5 @@ footer img:hover {
 and (min-device-width : 320px)
 and (max-device-width : 568px) {
 
-  .container {    
-    max-width: 100%;
-  }
+  
 }
