@@ -244,16 +244,20 @@ h1, h2 {
   color: #B1A3B8;
 }
 
-.photo img {
-	margin-top: 3.5rem;
-	width: 150px;
-	transition: width 0.5s ease;
-	border-radius: 10px;
-	box-shadow: 0 0 5px #666666;
+.photo a, img {
+  margin-top: 2rem;
+  padding: 2rem;
+  width: 290px;
+  height: auto;
+  transition: width 0.3s ease;
+  box-shadow: 0 0 0px;
 }
 
-.zoom img:hover { 
+.zoom a, img:hover { 
   width:300px; 
+  border-radius: 10px;
+  box-shadow: 0 0 5px #666666;
+  
 }
 
 .footer {
