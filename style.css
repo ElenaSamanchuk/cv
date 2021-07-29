@@ -26,52 +26,17 @@ body {
   animation: fade-in 1s linear; /* IE 10+, Fx 29+ */
 }
 
-a {
-  text-decoration: none;
-  transition: font-size 0.3s ease;
-}
-
-a:hover {
-  color: white;
-  text-shadow: 1px 1px 2px black, 0 0 1em red;
-  font-size: 1.3em;
-}
-
-img {
-  width: 200px;
-  height: auto;  
-  box-shadow: 1px 1px 1px black, 0 0 1em red;
-  transition: width 0.3s ease;
-}
-
-img:hover {
-  width:140px;
-  box-shadow: 5px 5px 5px black, 0 0 5em red;
-}
-
-h1, h2 {
-  margin-bottom: 20px;
-  text-shadow: 1px 1px 2px black, 0 0 1em red;  
-}
-
 .container {
+  width: 100%;
+  min-height: 100vh;
   position: relative;
-  margin: 0 auto; 
-  width: 1024px; 
-  min-height: 100vh;  
+  background: #DBD2DF;
 }
 
 .header {
-  position: fixed;
-  width: 1024px;
-  min-height: 55px;
-  box-shadow: 0.14px 1px 3px 1px rgba(0,1,1,.118);
-  display: flex;
-  justify-content: center;
-  align-items: center;  
-  z-index: 2;
-  opacity: 0.99;
-  background: #B1A3B8;
+  width: 100%;
+  height: 100px;
+  background: #DBD2DF;
 }
 
 .header__menu {
@@ -82,15 +47,33 @@ h1, h2 {
 }
 
 .header__menu_link {
-  color: white;
+  color: aliceblue;
   font-size: 1.1rem;
+}
+
+.background {
+  display: inline-block;
+  background: #B1A3B8;
+  width: 100%;
+  height: 190px;
+  position: absolute;
+  left: 0;
 }
 
 .main {
   width: 1024px;
   min-height: 100%;
+  margin: 0 auto;
   z-index: 2;
   opacity: 0.99;
+}
+
+.header__main {
+  min-height: 55px;
+  box-shadow: 0.14px 1px 3px 1px rgba(0,1,1,.118);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .about__main {
@@ -98,9 +81,8 @@ h1, h2 {
 }
 
 .about__main_hero {
-  padding: 3.5em 0;
-  min-height: 700px;
   background: url("https://sun9-86.userapi.com/impf/c834203/v834203143/17ba83/7Y1L4iagb4U.jpg?size=2560x1920&quality=96&sign=dfa38d43941507ef5c1a3addb25cb322&type=album") no-repeat top;
+  padding: 3.5em 0;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -111,13 +93,34 @@ h1, h2 {
 
 .about__main_hero img {
   height: auto;
-  width: 170px;
+  width: 130px;
   border-radius: 30%;
   transition: width 0.5s ease;
 }
 
-.about__main_hero img:hover {
-  width: 190px;
+a {
+  text-decoration: none;
+  transition: font-size 0.5s ease;
+}
+
+a:hover {
+  font-size: 1.3em;
+}
+
+img {
+  height: auto;
+  width: 100px;
+  transition: width 0.5s ease;
+}
+
+img:hover {
+  width:140px;
+}
+
+h1, h2 {
+  text-shadow: 1px 1px 2px black, 0 0 1em red;
+  margin-bottom: 20px;
+
 }
 
 .about__main_info {
@@ -141,14 +144,12 @@ h1, h2 {
   margin: 0 6px;
   font-size: 3rem;
   color: #fff;
-  -webkit-transition: .3s cubic-bezier(.68,-.55,.265,1.55);
-  transition: .3s cubic-bezier(.68,-.55,.265,1.55);
-  transition: font-size 0.3s ease;
+  -webkit-transition: .8s cubic-bezier(.68,-.55,.265,1.55);
+  transition: .8s cubic-bezier(.68,-.55,.265,1.55);
 }
 
 .links_info a:hover {
   color: #B1A3B8;
-  font-size: 3.5em;
 }
 
 .links_info li {
@@ -170,13 +171,13 @@ h1, h2 {
 .examples__main,
 .experience__main,
 .education__main,
-.english__main {
+.english__main,
+.send__main {
   margin-top: 3.5rem;
-  padding: 28px 68px;
   width: 100%;
-  height: auto;  
-  border-bottom-right-radius: 30px;
+  height: auto;
   background: white;
+  padding: 28px 68px;
 }
 
 .skills__main_container {
@@ -217,12 +218,12 @@ h1, h2 {
 }
 
 .circle {
-  margin-right: 0.5rem;
   width: 8px;
   height: 8px;
   border-radius: 50%;
   background: #B1A3B8;
-  display: inline-block;  
+  display: inline-block;
+  margin-right: 0.5rem;
 }
 
 .experience_text_box {
@@ -250,38 +251,15 @@ h1, h2 {
 }
 
 .footer {
-  margin: 0 auto;
-  margin-top: 3.5rem;
+  margin-top: 0px;
   width: 100%;
   height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #B1A3B8;
-}
-
-.footer img {
-  width: 100px;
-  height: auto;  
-  box-shadow: none;
-  transition: width 0.3s ease;
-}
-
-footer img:hover {
-  width: 130px;
-  box-shadow: none;
+  background: #DBD2DF;
 }
 
 .footer p {
   font-size: 50px;
-}
-
-/* CSS Mobile */
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 568px) {
-
-  .container {    
-    max-width: 100%;
-  }
 }
