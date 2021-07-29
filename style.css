@@ -63,7 +63,6 @@ h1, h2 {
 
 .header {
   position: fixed;
-  margin-top: -55px;
   width: 1024px;
   min-height: 55px;
   box-shadow: 0.14px 1px 3px 1px rgba(0,1,1,.118);
