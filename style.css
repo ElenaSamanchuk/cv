@@ -244,20 +244,19 @@ h1, h2 {
   color: #B1A3B8;
 }
 
-.photo a, img {
+.photo {
   margin-top: 2rem;
   padding: 2rem;
-  width: 290px;
+  width: 280px;
   height: auto;
   transition: width 0.3s ease;
   box-shadow: 0 0 0px;
 }
 
-.zoom a, img:hover { 
-  width:300px; 
+.zoom a>img:hover{ 
+  width:290px; 
   border-radius: 10px;
-  box-shadow: 0 0 5px #666666;
-  
+  box-shadow: 0 0 5px #666666;  
 }
 
 .footer {
