@@ -10,12 +10,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/*плавная загрузка страниц*/
-@-webkit-keyframes fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
-@-moz-keyframes    fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
-@-o-keyframes      fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
-@keyframes         fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
-
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 1em;
@@ -275,6 +269,12 @@ footer img:hover {
 .footer p {
   font-size: 50px;
 }
+
+/*плавная загрузка страниц*/
+@-webkit-keyframes fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+@-moz-keyframes    fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+@-o-keyframes      fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+@keyframes         fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
 
 /* CSS Mobile */
 @media only screen
