@@ -282,6 +282,6 @@ footer img:hover {
 and (min-device-width : 320px)
 and (max-device-width : 568px) {
   .header {
-    width:92%;
+    width:97%;
   }   
 }
