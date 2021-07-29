@@ -244,7 +244,7 @@ h1, h2 {
   color: #B1A3B8;
 }
 
-.photo {
+.photo img {
 	margin-top: 3.5rem;
 	width: 150px;
 	transition: width 0.5s ease;
@@ -252,7 +252,7 @@ h1, h2 {
 	box-shadow: 0 0 5px #666666;
 }
 
-.zoom:hover img { 
+.zoom img:hover { 
   width:300px; 
 }
 
