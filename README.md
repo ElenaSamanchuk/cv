@@ -1,3 +1,3 @@
 # CV
 
-https://elenasamanchuk.github.io/CV/
+https://elenasamanchuk.github.io/cv/
